@@ -1,19 +1,22 @@
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MVCMOIVE.Models;
-namespace MVCMOVIE.Controllers
+using Mvcmovie.Models;
+
+namespace MVCMOVIE.Controllers;
+
+public class HomeController : Controller
 {
-public class PersonController : Controller
-{
-public IActionResult Index ()
-{
+
+  public IActionResult Demo()
+  {
     return View();
-}
-[HttpPost]
-      public IActionResult Index( Person ps )
-{
-        string  strResult ="Xin chao" + ps.PersonID + "-" + ps.FullName +"-" + ps.Address;
-        ViewBag.ifPerson= strResult;
-        return View();
-}
-}
+  }
+  [HttpPost]
+  public IActionResult Demo (string FullName)
+  {
+    string strResult ="Hello" + FullName ;
+    ViewBag.thongbao = strResult;
+    return View();
+  }
+   
 }
