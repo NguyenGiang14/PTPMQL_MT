@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace  MVCMOIVE.Models.Person
-{
-    public class Person : Employee{
+using Mvcmovie.Models;
+namespace  MVCMOIVE.Models;
+
+    public class Employee : Person {
     public string?  Tuoi { get; set; }
     public string? GioiTinh { get; set; }
     }
-}

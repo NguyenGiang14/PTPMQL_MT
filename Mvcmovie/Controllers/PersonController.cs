@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MVCMOVIE.Data;
 namespace MVCMOIVE.Controllers;
 
 
@@ -10,7 +12,7 @@ public class PersonController : Controller
         }
    public async Task<IActionResult> Index()
     {
-        return View(await _context.Student.TOListAsync());
+        return View(await _context.Person.ToListAsync());
     }
 
     [HttpPost]
