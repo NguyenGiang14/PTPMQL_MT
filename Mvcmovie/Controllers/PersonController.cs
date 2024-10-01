@@ -1,22 +1,23 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Mvcmovie.Models;
+namespace MVCMOIVE.Controllers;
 
-namespace MVCMOVIE.Controllers;
 
-public class HomeController : Controller
+public class PersonController : Controller
 {
+    private readonly ApplicationDbContext _context;
+        public PersonController(ApplicationDbContext cotext){
+            _context = cotext;
+        }
+   public async Task<IActionResult> Index()
+    {
+        return View(await _context.Student.TOListAsync());
+    }
 
-  public IActionResult Demo()
-  {
-    return View();
-  }
-  [HttpPost]
-  public IActionResult Demo (string FullName)
-  {
-    string strResult ="Hello" + FullName ;
-    ViewBag.thongbao = strResult;
-    return View();
-  }
-   
+    [HttpPost]
+    public IActionResult Index(string CanCuocCongDan, string HoTen, string QueQuan)
+    {
+        string strResult = "Xin chao " + HoTen + "-" + QueQuan;
+        ViewBag.Info = strResult;
+        return View();
+    }
 }

@@ -1,12 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace  MVCMOIVE.Models
+namespace  MVCMOIVE.Models.Person
 {
-   [Table("Employee")]
-    public class Employee{
-        [Key]
-    public string?  StudentID { get; set; }
-    public string? FullName { get; set; }
-    public string? Address { get; set; }
+    public class Person : Employee{
+    public string?  Tuoi { get; set; }
+    public string? GioiTinh { get; set; }
     }
 }

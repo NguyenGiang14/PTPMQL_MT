@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using MVCMOIVE.Models;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc;
+using MVCMOVIE.Models;
+using MVCMOVIE.Models;
 namespace MVCMOVIE.Data
 {
-    public  class ApplicationDbContext : DbContext
-{
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {}
-    public DbSet<Employee> Emplyoyee { get; set;}
-}
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options):base(options)
+        {}
+        public DbSet<Person> Person { get; set;}
+         public DbSet<Employee> Employees { get; set;}
+    }
 }

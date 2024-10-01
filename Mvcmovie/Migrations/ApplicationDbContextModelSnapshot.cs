@@ -16,6 +16,22 @@ namespace Mvcmovie.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
+            modelBuilder.Entity("MVCMOIVE.Models.Demo", b =>
+                {
+                    b.Property<string>("StudentID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("StudentID");
+
+                    b.ToTable("Demo");
+                });
+
             modelBuilder.Entity("MVCMOIVE.Models.Employee", b =>
                 {
                     b.Property<string>("StudentID")

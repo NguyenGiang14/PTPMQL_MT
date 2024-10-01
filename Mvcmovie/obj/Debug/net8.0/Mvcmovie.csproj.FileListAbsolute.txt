@@ -11,8 +11,6 @@ D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.AssemblyInfoInputs.cache
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.AssemblyInfo.cs
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.csproj.CoreCompileInputs.cache
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.MvcApplicationPartsAssemblyInfo.cache
-D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cache
-D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cs
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.sourcelink.json
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets.build.json
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets.development.json
@@ -21,9 +19,7 @@ D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets\msbuild.build.Mvcmovie.pr
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mvcmovie.props
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mvcmovie.props
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\staticwebassets.pack.json
-D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\scopedcss\bundle\Mvcmovie.styles.css
-D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\scopedcss\projectbundle\Mvcmovie.bundle.scp.css
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.dll
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\refint\Mvcmovie.dll
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.pdb
@@ -277,3 +273,5 @@ D:\PTPMQL_MT\Mvcmovie\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.C
 D:\PTPMQL_MT\Mvcmovie\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.csproj.AssemblyReference.cache
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.csproj.Up2Date
+D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cache
+D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cs
