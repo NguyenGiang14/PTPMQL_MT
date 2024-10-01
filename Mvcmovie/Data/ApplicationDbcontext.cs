@@ -9,4 +9,6 @@ namespace MVCMOVIE.Data;
         {}
         public DbSet<Person> Person { get; set; }
          public DbSet<Employee> Employee { get; set;}
+
+public DbSet<MVCMOIVE.Models.Student> Student { get; set; } = default!;
     }

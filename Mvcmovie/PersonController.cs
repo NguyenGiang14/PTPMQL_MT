@@ -5,27 +5,27 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MVCMOIVE.Models;
 using MVCMOVIE.Data;
+using Mvcmovie.Models;
 
-namespace Mvcmovie.Controllers
+namespace Mvcmovie
 {
-    public class StudentController : Controller
+    public class PersonController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public StudentController(ApplicationDbContext context)
+        public PersonController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Student
+        // GET: Person
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Student.ToListAsync());
+            return View(await _context.Person.ToListAsync());
         }
 
-        // GET: Student/Details/5
+        // GET: Person/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace Mvcmovie.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
-                .FirstOrDefaultAsync(m => m.StudentID == id);
-            if (student == null)
+            var person = await _context.Person
+                .FirstOrDefaultAsync(m => m.Cancuocongdan == id);
+            if (person == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(person);
         }
 
-        // GET: Student/Create
+        // GET: Person/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Student/Create
+        // POST: Person/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("StudentID,HoTen,Address")] Student student)
+        public async Task<IActionResult> Create([Bind("Cancuocongdan,HoTen,QueQuan")] Person person)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(student);
+                _context.Add(person);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+            return View(person);
         }
 
-        // GET: Student/Edit/5
+        // GET: Person/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace Mvcmovie.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student.FindAsync(id);
-            if (student == null)
+            var person = await _context.Person.FindAsync(id);
+            if (person == null)
             {
                 return NotFound();
             }
-            return View(student);
+            return View(person);
         }
 
-        // POST: Student/Edit/5
+        // POST: Person/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("StudentID,HoTen,Address")] Student student)
+        public async Task<IActionResult> Edit(string id, [Bind("Cancuocongdan,HoTen,QueQuan")] Person person)
         {
-            if (id != student.StudentID)
+            if (id != person.Cancuocongdan)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace Mvcmovie.Controllers
             {
                 try
                 {
-                    _context.Update(student);
+                    _context.Update(person);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StudentExists(student.StudentID))
+                    if (!PersonExists(person.Cancuocongdan))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace Mvcmovie.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(student);
+            return View(person);
         }
 
-        // GET: Student/Delete/5
+        // GET: Person/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -124,34 +124,34 @@ namespace Mvcmovie.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
-                .FirstOrDefaultAsync(m => m.StudentID == id);
-            if (student == null)
+            var person = await _context.Person
+                .FirstOrDefaultAsync(m => m.Cancuocongdan == id);
+            if (person == null)
             {
                 return NotFound();
             }
 
-            return View(student);
+            return View(person);
         }
 
-        // POST: Student/Delete/5
+        // POST: Person/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var student = await _context.Student.FindAsync(id);
-            if (student != null)
+            var person = await _context.Person.FindAsync(id);
+            if (person != null)
             {
-                _context.Student.Remove(student);
+                _context.Person.Remove(person);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentExists(string id)
+        private bool PersonExists(string id)
         {
-            return _context.Student.Any(e => e.StudentID == id);
+            return _context.Person.Any(e => e.Cancuocongdan == id);
         }
     }
 }
