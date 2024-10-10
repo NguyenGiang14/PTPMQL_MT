@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Mvcmovie.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Mvcmovie.bundle.scp.css"
+    },
+    {
       "Id": "D:\\PTPMQL_MT\\Mvcmovie\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

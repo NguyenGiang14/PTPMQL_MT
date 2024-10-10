@@ -275,3 +275,5 @@ D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.csproj.AssemblyReference.cache
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.csproj.Up2Date
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cache
 D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\Mvcmovie.RazorAssemblyInfo.cs
+D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\PTPMQL_MT\Mvcmovie\obj\Debug\net8.0\scopedcss\projectbundle\Mvcmovie.bundle.scp.css

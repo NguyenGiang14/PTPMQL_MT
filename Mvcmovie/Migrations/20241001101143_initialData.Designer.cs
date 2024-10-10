@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mvcmovie.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241001081233_Create_table_Employee")]
-    partial class Create_table_Employee
+    [Migration("20241001101143_initialData")]
+    partial class initialData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

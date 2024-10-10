@@ -3,12 +3,12 @@ using MVCMOIVE.Models;
 using Mvcmovie.Models;
 namespace MVCMOVIE.Data;
 
-    public class ApplicationDbContext : DbContext
-    {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options):base(options)
-        {}
-        public DbSet<Person> Person { get; set; }
-         public DbSet<Employee> Employee { get; set;}
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    { }
+    public DbSet<Person> Person { get; set; }
+    public DbSet<Employee> Employee { get; set; }
 
-public DbSet<MVCMOIVE.Models.Student> Student { get; set; } = default!;
-    }
+    public DbSet<Student> Student { get; set; } = default!;
+}

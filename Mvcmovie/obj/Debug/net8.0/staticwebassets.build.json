@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VhNg737TWUcxQ2FUm/4qNxiUd3TclLae5vkaP5ovY5o=",
+  "Hash": "095crNHsKVQVFTX82KtGqo/ITpqj1swt7rxm2NLzNFA=",
   "Source": "Mvcmovie",
   "BasePath": "_content/Mvcmovie",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Mvcmovie.styles.css",
+      "SourceId": "Mvcmovie",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Mvcmovie",
+      "RelativePath": "Mvcmovie.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Mvcmovie.styles.css"
+    },
+    {
+      "Identity": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Mvcmovie.bundle.scp.css",
+      "SourceId": "Mvcmovie",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Mvcmovie",
+      "RelativePath": "Mvcmovie.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\PTPMQL_MT\\Mvcmovie\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Mvcmovie.bundle.scp.css"
+    },
     {
       "Identity": "D:\\PTPMQL_MT\\Mvcmovie\\wwwroot\\css\\site.css",
       "SourceId": "Mvcmovie",
